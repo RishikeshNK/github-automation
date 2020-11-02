@@ -6,4 +6,8 @@
 
 ```gitrepo name```
 
-- Or ```python main.py name``` is gitrepo is not set as a valid MACRO in *doskey*
+- Or ```python main.py name``` if gitrepo is not set as a valid MACRO in *doskey*
+
+### Installation and Setup :-
+
+- Todo
