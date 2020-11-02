@@ -1,0 +1,1 @@
+doskey gitrepo=python "C:\Users\Rishikesh Kanabar\Desktop\python_projects\github-automation\main.py" $*
