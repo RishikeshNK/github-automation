@@ -1,7 +1,5 @@
 from sys import argv
 import os
-import requests
-import sys
 
 # Setting the projects path
 DIRPATH = "C:/Users/Rishikesh Kanabar/Desktop/python_projects/"
@@ -25,17 +23,25 @@ os.mkdir(path)
 os.chdir(path)
 
 # Creating the readme.md file with echo
-os.system(f'echo # {name.title()} >> README.md')
+os.system(f'echo # {name} >> README.md')
 
 # Initialising a git local repository
 print()
 os.system('git init')
+print()
+
+# Creating a GitHub remote repository with gh CLI
+os.system(f'gh repo create {name} --public --confirm')
 
 # Making the first commit
 print()
 os.system('git add README.md')
 os.system('git commit -m "first commit"')
+print()
 
-# Making a git branch
-os.system('git branch -M main')
+# Pushing changes to GitHub remote repository
+os.system('git push origin master')
+print()
 
+# Opening project in VSCode
+os.system('code .')
