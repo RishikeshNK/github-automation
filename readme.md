@@ -2,11 +2,26 @@
 
 ## By: Rishikesh NK
 
+### Automated Functioning :-
+
+#### After entering the command ```gitrepo {name}``` the script :-
+
+1. Creates a new folder with the argument name ```mkdir {name}```
+2. Creates a README markdown file with the argument name as the heading ```echo # {name} >> README.md```
+3. Initializes a Git Local Repository ```git init```
+4. Creates a GitHub Remote Repository with gh-cli ```gh repo create {name} --public --confirm```
+5. Adds the README markdown file and makes the first commit ```git add README.md```
+```git commit -m "first commit"```
+6. Pushes the changes to the Remote Repository ```git push origin master```
+7. Opens the project in Visual Studio Code ```code .```
+
 ### Usage :-
 
-`gitrepo name`
+`gitrepo {name}`
 
-- Or `python main.py name` if gitrepo is not set as a valid MACRO in _doskey_
+- Note: ```{name}``` is the name of the repository you want to create.
+
+- Or `python main.py name` if gitrepo is not set as a valid MACROS in _doskey_
 
 ### Installation and Setup :-
 
