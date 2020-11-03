@@ -2,7 +2,7 @@ from sys import argv
 import os
 
 # Setting the projects path
-DIRPATH = "C:/Users/Rishikesh Kanabar/Desktop/python_projects/"
+DIRPATH = "<path to folder>"
 
 # Getting the name of the repository
 try:
@@ -10,7 +10,7 @@ try:
 except:
     
     # Printing error and exiting if invalid command used
-    print("Usage: gitrepo name\n")
+    print("\nUsage: gitrepo name\n")
     exit()
 
 # Joining the repository name with the path
@@ -43,5 +43,5 @@ print()
 os.system('git push origin master')
 print()
 
-# Opening project in VSCode
+# Opening project in VSCode - Remove if you dont use VSCode
 os.system('code .')
