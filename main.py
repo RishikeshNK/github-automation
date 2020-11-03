@@ -2,7 +2,7 @@ from sys import argv
 import os
 
 # Setting the projects path
-DIRPATH = "<path to folder>"
+DIRPATH = r"C:\Users\Rishikesh Kanabar\Desktop\python_projects"
 
 # Getting the name of the repository
 try:
